@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import time
 
 # Reading the txt file 
-with open('/Users/abhinavchhabra/Downloads/V1 (1).txt', 'r') as f:
+with open('V1 (1).txt', 'r') as f:
     grid = [list(line.strip()) for line in f]
 
 # Precompute blocked cells
@@ -282,7 +282,7 @@ def test(agent, episodes, epsilon):
     plt.plot(ep,rewards)
     env.close()
 agent = QLearningAgent(HEIGHT,WIDTH)
-agent.Q  = np.load('/Users/abhinavchhabra/Documents/Coding/BCS Secy task/Q_table.npy')
+agent.Q  = np.load('Q_table.npy')
 test(agent,100,0.1)
 plt.xlabel('Episode No.')
 plt.ylabel('Rewards')
