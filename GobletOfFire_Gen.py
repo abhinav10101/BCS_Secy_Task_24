@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import time
 
 # Reading the txt file 
-with open('/Users/abhinavchhabra/Downloads/V1 (1).txt', 'r') as f:
+with open('V1 (1).txt', 'r') as f:
     grid = [list(line.strip()) for line in f]
 
 # Precompute blocked cells

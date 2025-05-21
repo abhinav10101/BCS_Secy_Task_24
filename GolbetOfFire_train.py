@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import time
 
 # Reading the txt file 
-with open('/Users/abhinavchhabra/Downloads/V1 (1).txt', 'r') as f:
+with open('V1 (1).txt', 'r') as f:
     grid = [list(line.strip()) for line in f]
 
 # Precompute blocked cells
@@ -283,4 +283,4 @@ def train(epsilon_start, alpha, gamma, episodes):
     env.close()
     return agent
 agent = train(0.9,0.2,0.96,30000)
-np.save('/Users/abhinavchhabra/Documents/Coding/BCS Secy task/Q_table.npy',agent.Q)
+np.save('Q_table.npy',agent.Q)
