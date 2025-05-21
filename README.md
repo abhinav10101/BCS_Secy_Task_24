@@ -42,3 +42,5 @@ To obtain the plot for rewards per episode over the course of 100 episodes you c
 The file GobletOfFire_test.py tests the code for one episode and provides a pygame rendering of it.
 
 To find the number of generations before Harry escapes the death eater consecutively 10 times you can run the GobletOfFire_Gen.py .When I ran it it took 5275 generations.
+
+To run the grid with a bigger maze and with 2 death eaters run GobletOfFire_2.py . Training it with a large number of episodes makes the Q table very large so run it on small number of episodes such as 3000. After training for 3000 episodes I got an accuracy of around 30%.
